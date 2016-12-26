@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="description">
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="author" content="Takashige">
+<title>シューティングゲーム2</title>
+<style type="text/css" media="all">
+body
+{
+margin: 0;
+padding: 0;
+}
+</style>
+<script charset="utf-8" type="text/javascript" src="https://googledrive.com/host/0BxmN_BdhgSuCamF1NHllUmhHYk0/swfobject.js"></script>
+<script>
+window.onload=function()
+{
+var flashvars = {};
+var params = {};
+var attributes = {};
+
+// SWF
+swfobject.embedSWF("shooting.swf", "game", "480", "320", "11.0.0", false, flashvars, params, attributes);
+params.allowScriptAccess="sameDomain";
+params.wmode="opaque";
+params.bgcolor="#000000";
+params.quality="low";
+}
+</script>
+</head>
+
+<body>
+<div id="game">
+<p>このコンテンツをご覧になるには、最新のバージョンの<a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player</a>が必要です。</p>
+</div>
+</body>
+</html>
