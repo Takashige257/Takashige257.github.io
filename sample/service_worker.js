@@ -1,8 +1,8 @@
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-	'/qE20gFKVrZ4fUZqIQMIR4KcozpmVWRYX/',
-	'/qE20gFKVrZ4fUZqIQMIR4KcozpmVWRYX/images/ic_launcher.png',
-	'/qE20gFKVrZ4fUZqIQMIR4KcozpmVWRYX/images/_IGP4305.jpg'
+	'/sample/',
+	'/sample/images/ic_launcher.png',
+	'/sample/images/_IGP4305.jpg'
 ];
 // インストール処理
 self.addEventListener('install', function(event)
