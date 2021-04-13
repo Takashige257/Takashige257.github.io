@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<meta name="theme-color" content="#000000">
+	<meta name="robots" content="noindex">
+	<title>PWA Test</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+	<link rel="manifest" href="manifest.json">
+	<script>
+		// ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
+		if ('serviceWorker' in navigator)
+		{
+			navigator.serviceWorker.register('service_worker.js').then(function(registration)
+			{
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+			}).catch(function(err)
+			{
+				console.log('ServiceWorker registration failed: ', err);
+			});
+		}
+	</script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+		( function () {
+
+			window.onload=function(e)
+			{
+				test();
+			}
+
+		} )();
+		</script>
+		</head>
+
+<body>
+	<h1>Hello,PWA</h1>
+</body>
+
+</html>
